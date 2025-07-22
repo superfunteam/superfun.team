@@ -1,0 +1,132 @@
+<!doctype html>
+<html>
+<head>
+  <title>Superfun</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/css/build.css" rel="stylesheet">
+</head>
+<body class="bg-navy text-white h-screen grid grid-cols-1 md:grid-rows-[auto_1fr_auto] divide-y-2 divide-white">
+  
+  <!-- mobile menu --> 
+  <div class="mobile-menu absolute top-[64px] left-0 w-full bottom-[64px] bg-navy z-50 opacity-0 transform -translate-x-full transition-transform duration-300">
+    <div class="mobile-menu-content grid grid-cols-1 divide-y-2 divide-white">  
+        <div class="p-4 font-semibold text-lg border-r-0 md:border-r-2 flex items-center"><a href="/work" class="">Work</a></div>
+        <div class="p-4 font-semibold text-lg md:flex items-center"><a href="https://superfun.games" target="_blank" class="group">Games <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4 inline relative opacity-0 group-hover:opacity-70 transition duration-300 -top-[1px]">
+            <path d="M6.22 8.72a.75.75 0 0 0 1.06 1.06l5.22-5.22v1.69a.75.75 0 0 0 1.5 0v-3.5a.75.75 0 0 0-.75-.75h-3.5a.75.75 0 0 0 0 1.5h1.69L6.22 8.72Z" />
+            <path d="M3.5 6.75c0-.69.56-1.25 1.25-1.25H7A.75.75 0 0 0 7 4H4.75A2.75 2.75 0 0 0 2 6.75v4.5A2.75 2.75 0 0 0 4.75 14h4.5A2.75 2.75 0 0 0 12 11.25V9a.75.75 0 0 0-1.5 0v2.25c0 .69-.56 1.25-1.25 1.25h-4.5c-.69 0-1.25-.56-1.25-1.25v-4.5Z" />
+        </svg>
+        </a>
+       </div>  
+       <div class="p-4 font-semibold text-lg border-r-0 md:flex items-center border-b-2"><a href="/contact" class="">Contact</a></div>
+    </div>
+  </div>
+
+  <!-- Header Row -->
+  <div class="header-row grid grid-cols-2 md:grid-cols-[32px_1fr_1fr_1fr_1fr] divide-x-2 divide-white">
+  <div class="hidden md:block col-span-1 p-4"></div>
+  <div class="col-span-1 p-4 font-semibold text-lg flex items-center">
+    <a href="/" class="flex items-center relative pl-10">
+        <svg class="size-8 absolute left-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 146 146" fill="none" preserveAspectRatio="xMidYMid meet" role="img">
+            <path d="M73 0C58.562 0 44.4482 4.28137 32.4434 12.3027C20.4386 20.3241 11.082 31.7251 5.55683 45.0641C0.0316292 58.4031 -1.41401 73.081 1.40271 87.2416C4.21943 101.402 11.172 114.41 21.3812 124.619C31.5905 134.828 44.5978 141.781 58.7584 144.597C72.919 147.414 87.5969 145.968 100.936 140.443C114.275 134.918 125.676 125.561 133.697 113.557C141.719 101.552 146 87.438 146 73C146 53.6392 138.309 35.0714 124.619 21.3812C110.929 7.69105 92.3608 0 73 0Z" fill="black"></path>
+            <path d="M72.0851 116.799C75.9129 116.799 79.016 113.696 79.016 109.868C79.016 106.041 75.9129 102.938 72.0851 102.938C68.2573 102.938 65.1543 106.041 65.1543 109.868C65.1543 113.696 68.2573 116.799 72.0851 116.799Z" fill="#7EA2F8"></path>
+            <path d="M53.6496 104.512C57.4774 104.512 60.5804 101.409 60.5804 97.5812C60.5804 93.7534 57.4774 90.6504 53.6496 90.6504C49.8218 90.6504 46.7188 93.7534 46.7188 97.5812C46.7188 101.409 49.8218 104.512 53.6496 104.512Z" fill="#7EA2F8"></path>
+            <path d="M72.084 66.8545V79.1445C74.5152 79.1449 76.8917 79.8664 78.9128 81.2177C80.9339 82.5689 82.5088 84.4893 83.4383 86.7358C84.3678 88.9823 84.6101 91.4541 84.1346 93.8383C83.6591 96.2226 82.4871 98.4122 80.7669 100.13L89.4626 108.813C92.8994 105.376 95.2397 100.996 96.1878 96.2287C97.1359 91.4612 96.6492 86.5196 94.7891 82.0287C92.929 77.5378 89.7792 73.6992 85.7378 70.9983C81.6964 68.2973 76.9449 66.8553 72.084 66.8545Z" fill="#7EA2F8"></path>
+            <path d="M72.8582 29.2008C69.0304 29.2008 65.9274 32.3039 65.9274 36.1317C65.9274 39.9595 69.0304 43.0625 72.8582 43.0625C76.686 43.0625 79.7891 39.9595 79.7891 36.1317C79.7891 32.3039 76.686 29.2008 72.8582 29.2008Z" fill="white"></path>
+            <path d="M91.2938 41.4879C87.466 41.4879 84.3629 44.5909 84.3629 48.4187C84.3629 52.2466 87.466 55.3496 91.2938 55.3496C95.1216 55.3496 98.2246 52.2466 98.2246 48.4187C98.2246 44.5909 95.1216 41.4879 91.2938 41.4879Z" fill="white"></path>
+            <path d="M72.8594 79.1455L72.8594 66.8555C70.4282 66.8551 68.0517 66.1336 66.0306 64.7823C64.0095 63.4311 62.4346 61.5107 61.5051 59.2642C60.5756 57.0177 60.3333 54.5459 60.8088 52.1617C61.2843 49.7774 62.4563 47.5878 64.1765 45.8697L55.4807 37.1868C52.044 40.6244 49.7036 45.0038 48.7555 49.7713C47.8074 54.5388 48.2942 59.4804 50.1543 63.9713C52.0143 68.4622 55.1642 72.3008 59.2056 75.0017C63.247 77.7027 67.9985 79.1447 72.8594 79.1455Z" fill="white"></path>
+            </svg>
+        <span>Superfun</span>
+    </a>
+  </div>
+  <div class="col-span-1 p-4 font-semibold text-lg border-r-0 md:border-r-2 flex items-center justify-end md:justify-start"><a href="/work" class="hidden md:block">Work</a><a href="#" class="menu-link md:hidden">Menu</a></div>
+  <div class="hidden md:block col-span-1 p-4 font-semibold text-lg md:flex items-center"><a href="https://superfun.games" target="_blank" class="group">Games <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" fill="currentColor" class="size-4 inline relative opacity-0 group-hover:opacity-70 transition duration-300 -top-[1px]">
+    <path d="M6.22 8.72a.75.75 0 0 0 1.06 1.06l5.22-5.22v1.69a.75.75 0 0 0 1.5 0v-3.5a.75.75 0 0 0-.75-.75h-3.5a.75.75 0 0 0 0 1.5h1.69L6.22 8.72Z" />
+    <path d="M3.5 6.75c0-.69.56-1.25 1.25-1.25H7A.75.75 0 0 0 7 4H4.75A2.75 2.75 0 0 0 2 6.75v4.5A2.75 2.75 0 0 0 4.75 14h4.5A2.75 2.75 0 0 0 12 11.25V9a.75.75 0 0 0-1.5 0v2.25c0 .69-.56 1.25-1.25 1.25h-4.5c-.69 0-1.25-.56-1.25-1.25v-4.5Z" />
+  </svg>
+  </a></div>  
+  <div class="hidden md:block col-span-1 p-4 font-semibold text-lg border-r-0 md:flex items-center"><a href="/contact" class="">Contact</a></div>
+  </div>
+
+  <!-- Main Content Row (scrollable) -->
+  <div class="body-row grid grid-cols-2 md:grid-cols-[32px_1fr_1fr_1fr_1fr] divide-y-2 md:divide-y-0 md:divide-x-2 divide-white overflow-y-auto">
+  <div class="hidden md:block col-span-1 p-4 md:overflow-y-auto"></div>
+  <div class="col-span-2 p-4 md:overflow-y-auto border-r-0 md:border-r-2"><h2 class="text-3xl md:text-4xl">Hello, new friend. We are Angie and Clark, and we're happy you've stumbled onto Superfun.</h2></div>
+  <div class="empty:hidden md:empty:block col-span-2 md:col-span-1 p-4 md:overflow-y-auto border-r-0 md:border-r-2 text-xl">
+    <p class="mb-6">We make websites, design systems, apps, and family games. Wait, what?</p>
+    <p class="mb-6">Clark has been making websites and internet weirdness for 20 years.</p>
+    <p class="mb-6">Angie has been designing and illustrating for top brands and publications even longer.</p>
+    <p class="mb-6">We work just like an internal team, and can tackle your biggest projects, from scratch, to the finish line, and beyond.</p>
+    <p class="mb-6">We also make <a href="https://superfun.games" target="_blank" rel="noopener noreferrer">games</a>. We’re happy things turned out this way.  ;)</p>
+  </div>
+  <div class="empty:hidden md:empty:block col-span-2 md:col-span-1 p-4 md:overflow-y-auto border-r-0 text-xl">
+    <p class="location mb-6">
+        <span class="label opacity-50">Location:</span><br>
+        Austin, TX<br>
+        United States
+    </p>
+    <p class="email mb-6">
+            <span class="label opacity-50">Email:</span><br>
+            <a href="mailto:clark@superfun.com">clark@superfun.com</a><br>
+            <a href="mailto:angie@superfun.com">angie@superfun.com</a>
+    </p> 
+
+    <p class="phone">
+        <span class="label opacity-50">Office Hours:</span><br>
+        Monday–Friday<br>
+        11am–5pm CST
+    </p>
+  </div>
+  </div>
+  
+  <!-- Footer Row -->
+  <div class="footer-row grid grid-cols-2 md:grid-cols-[32px_1fr_1fr_1fr_1fr] divide-x-2 divide-white border-b-0">
+  <div class="hidden md:block col-span-1 p-4 border-b-0"></div>
+  <div class="col-span-1 md:col-span-2 p-4 border-b-0 font-semibold text-lg"><a href="/contact" class="">About</a></div>
+  <div class="hidden md:block col-span-1 p-4 border-b-0"></div>
+  <div class="col-span-1 p-4 border-b-0 border-r-0 font-semibold text-lg text-right md:text-left opacity-50">2025</div>
+  </div>
+
+
+  <script>
+    if (document.startViewTransition) {
+      document.querySelectorAll('a').forEach(link => {
+        link.addEventListener('click', function(e) {
+          const href = link.getAttribute('href');
+          if (href && !href.startsWith('#')) {
+            e.preventDefault();
+            document.startViewTransition(() => {
+              window.location.href = href;
+            });
+          }
+        });
+      });
+    }
+  </script>
+
+  <script>
+    // Mobile menu toggle
+    const menuLink = document.querySelector('.menu-link');
+    const mobileMenu = document.querySelector('.mobile-menu');
+    let isMenuOpen = false;
+
+    menuLink.addEventListener('click', function(e) {
+      e.preventDefault();
+      
+      if (!isMenuOpen) {
+        // Show menu
+        mobileMenu.classList.remove('opacity-0', '-translate-x-full');
+        mobileMenu.classList.add('opacity-100', 'translate-x-0');
+        menuLink.textContent = 'Close';
+        isMenuOpen = true;
+      } else {
+        // Hide menu
+        mobileMenu.classList.remove('opacity-100', 'translate-x-0');
+        mobileMenu.classList.add('opacity-0', '-translate-x-full');
+        menuLink.textContent = 'Menu';
+        isMenuOpen = false;
+      }
+    });
+  </script>
+</body>
+</html>
