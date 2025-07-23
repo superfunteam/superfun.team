@@ -653,6 +653,9 @@
   .h-\[calc\(100vh-128px\)\] {
     height: calc(100vh - 128px);
   }
+  .h-dvh {
+    height: 100dvh;
+  }
   .h-full {
     height: 100%;
   }
