@@ -920,6 +920,10 @@
     border-style: var(--tw-border-style);
     border-width: 0px;
   }
+  .border-t-2 {
+    border-top-style: var(--tw-border-style);
+    border-top-width: 2px;
+  }
   .border-r-0 {
     border-right-style: var(--tw-border-style);
     border-right-width: 0px;
@@ -935,6 +939,9 @@
   .border-b-2 {
     border-bottom-style: var(--tw-border-style);
     border-bottom-width: 2px;
+  }
+  .border-white {
+    border-color: var(--color-white);
   }
   .bg-black\/50 {
     background-color: color-mix(in srgb, #000 50%, transparent);
@@ -1384,6 +1391,12 @@
   .md\:overflow-y-auto {
     @media (width >= 48rem) {
       overflow-y: auto;
+    }
+  }
+  .md\:border-t-0 {
+    @media (width >= 48rem) {
+      border-top-style: var(--tw-border-style);
+      border-top-width: 0px;
     }
   }
   .md\:border-r-2 {
