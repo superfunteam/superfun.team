@@ -577,6 +577,9 @@
   .z-50 {
     z-index: 50;
   }
+  .order-last {
+    order: 9999;
+  }
   .col-span-1 {
     grid-column: span 1 / span 1;
   }
@@ -941,6 +944,9 @@
   .mix-blend-multiply {
     mix-blend-mode: multiply;
   }
+  .mix-blend-plus-lighter {
+    mix-blend-mode: plus-lighter;
+  }
   .transition {
     transition-property: color, background-color, border-color, outline-color, text-decoration-color, fill, stroke, --tw-gradient-from, --tw-gradient-via, --tw-gradient-to, opacity, box-shadow, transform, translate, scale, rotate, filter, -webkit-backdrop-filter, backdrop-filter, display, visibility, content-visibility, overlay, pointer-events;
     transition-timing-function: var(--tw-ease, var(--default-transition-timing-function));
@@ -1109,6 +1115,11 @@
   .md\:z-8 {
     @media (width >= 48rem) {
       z-index: 8;
+    }
+  }
+  .md\:order-none {
+    @media (width >= 48rem) {
+      order: 0;
     }
   }
   .md\:col-span-1 {
