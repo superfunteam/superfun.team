@@ -1340,6 +1340,11 @@
       grid-template-columns: 32px 1fr 1fr 1fr 1fr;
     }
   }
+  .md\:grid-rows-\[64px_1fr_64px\] {
+    @media (width >= 48rem) {
+      grid-template-rows: 64px 1fr 64px;
+    }
+  }
   .md\:grid-rows-\[auto_1fr_auto\] {
     @media (width >= 48rem) {
       grid-template-rows: auto 1fr auto;
