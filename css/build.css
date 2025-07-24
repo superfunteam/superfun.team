@@ -275,11 +275,35 @@
   .-right-4 {
     right: calc(var(--spacing) * -4);
   }
+  .-right-\[10\%\] {
+    right: calc(10% * -1);
+  }
+  .-right-\[20\%\] {
+    right: calc(20% * -1);
+  }
+  .-right-\[25\%\] {
+    right: calc(25% * -1);
+  }
+  .right-0 {
+    right: calc(var(--spacing) * 0);
+  }
   .right-1 {
     right: calc(var(--spacing) * 1);
   }
   .right-2 {
     right: calc(var(--spacing) * 2);
+  }
+  .right-\[-10\%\] {
+    right: -10%;
+  }
+  .-bottom-\[10\%\] {
+    bottom: calc(10% * -1);
+  }
+  .-bottom-\[20\%\] {
+    bottom: calc(20% * -1);
+  }
+  .-bottom-\[30\%\] {
+    bottom: calc(30% * -1);
   }
   .bottom-0 {
     bottom: calc(var(--spacing) * 0);
@@ -313,6 +337,9 @@
   }
   .bottom-\[25\%\] {
     bottom: 25%;
+  }
+  .bottom-\[27\%\] {
+    bottom: 27%;
   }
   .bottom-\[30\%\] {
     bottom: 30%;
@@ -479,11 +506,17 @@
   .left-\[10\%\] {
     left: 10%;
   }
+  .left-\[15\%\] {
+    left: 15%;
+  }
   .left-\[22\%\] {
     left: 22%;
   }
   .left-\[23\%\] {
     left: 23%;
+  }
+  .left-\[25\%\] {
+    left: 25%;
   }
   .left-\[30\%\] {
     left: 30%;
@@ -523,6 +556,9 @@
   }
   .left-\[55\%\] {
     left: 55%;
+  }
+  .left-\[58\%\] {
+    left: 58%;
   }
   .left-\[60\%\] {
     left: 60%;
@@ -619,6 +655,9 @@
   }
   .mb-6 {
     margin-bottom: calc(var(--spacing) * 6);
+  }
+  .block {
+    display: block;
   }
   .flex {
     display: flex;
@@ -722,6 +761,9 @@
   .w-4\/5 {
     width: calc(4/5 * 100%);
   }
+  .w-5\/6 {
+    width: calc(5/6 * 100%);
+  }
   .w-\[10\%\] {
     width: 10%;
   }
@@ -740,6 +782,9 @@
   .w-\[30\%\] {
     width: 30%;
   }
+  .w-\[40\%\] {
+    width: 40%;
+  }
   .w-\[45\%\] {
     width: 45%;
   }
@@ -751,6 +796,9 @@
   }
   .w-full {
     width: 100%;
+  }
+  .origin-center {
+    transform-origin: center;
   }
   .-translate-x-full {
     --tw-translate-x: -100%;
@@ -764,8 +812,21 @@
     --tw-scale-x: -1;
     scale: var(--tw-scale-x) var(--tw-scale-y);
   }
+  .scale-y-\[-1\] {
+    --tw-scale-y: -1;
+    scale: var(--tw-scale-x) var(--tw-scale-y);
+  }
   .-rotate-90 {
     rotate: calc(90deg * -1);
+  }
+  .rotate-33 {
+    rotate: 33deg;
+  }
+  .rotate-40 {
+    rotate: 40deg;
+  }
+  .rotate-45 {
+    rotate: 45deg;
   }
   .rotate-90 {
     rotate: 90deg;
